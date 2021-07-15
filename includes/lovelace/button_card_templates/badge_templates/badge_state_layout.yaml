@@ -1,0 +1,36 @@
+#################################################################
+## Badge State Layout
+#################################################################
+  show_state: true
+  show_icon: false
+  show_label: true
+  show_units: false
+  styles:
+    grid:
+      - grid-template-areas: '"s" "n" "l"'
+      - grid-template-rows: 1fr min-content min-content
+      - grid-template-columns: 1fr
+    card:
+      - height: 93px
+      - background-color: transparent
+      - box-shadow: none
+      - border-radius: 0
+    state:
+      - width: 45px
+      - height: 45px
+      - border-radius: 50%
+      - border: '2px solid #717171'
+      - display: 'var(--ha-icon-display, inline-flex)'
+      - align-items: center
+      - justify-content: center
+      - position: relative
+      - vertical-align: middle
+      - color: '#f3f2f2'
+    name:
+      - width: 100%
+      - font-size: 0.675em
+      - color: '#f3f2f2'
+    label:
+      - width: 100%
+      - font-size: 0.6em
+      - color: '#f3f2f2'

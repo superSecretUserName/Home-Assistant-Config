@@ -2,11 +2,44 @@ path: default_view
 title: Home
 panel: false
 icon: "mdi:home"
-badges:
-  - entity: person.jeffrey_glusman
-  - entity: person.tiffany_conaway
-  - entity: camera.security
+# badges:
+#  - entity: person.jeffrey_glusman
+#  - entity: person.tiffany_conaway
 cards:
+  - type: grid
+    cards:
+      - entity: camera.security
+        type: 'custom:button-card'
+        name: Security
+        state:
+          - icon: 'mdi:cctv'
+            id: id_idle
+        template:
+          - badge_layout
+          - badge_states
+      - entity: person.jeffrey_glusman
+        type: 'custom:button-card'
+        label: '&nbsp;'
+        icon: 'mdi:person'
+        template:
+          - badge_state_layout      
+      - entity: person.tiffany_conaway
+        type: 'custom:button-card'
+        label: '&nbsp;'
+        icon: 'mdi:person'
+        template:
+          - badge_state_layout 
+      - entity: camera.security
+        type: 'custom:button-card'
+        name: Security
+        state:
+          - icon: 'mdi:cctv'
+            id: id_idle
+        template:
+          - badge_layout
+          - badge_states
+    columns: 4
+    square: true
   - type: vertical-stack
     cards:
       - type: entities

@@ -1,0 +1,22 @@
+#################################################################
+## Badge Layout
+#################################################################
+  show_state: true
+  styles:
+    card:
+      - height: 93px
+      - background-color: transparent
+      - box-shadow: none
+      - border-radius: 0
+    img_cell:
+      - width: 48px
+      - height: 48px
+      - border-radius: 50%
+    icon:
+      - width: 50%
+    name:
+      - width: 100%
+      - font-size: 0.675em
+    state:
+      - width: 100%
+      - font-size: 0.6em
